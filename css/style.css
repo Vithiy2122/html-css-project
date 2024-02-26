@@ -1,0 +1,142 @@
+:root{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#ffc54d;
+    --white:whitesmoke;
+}
+body h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url("../media/p1.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+
+header a{
+    text-decoration: none;
+    color:var(--yellow);
+    font-size: 1.5em;
+}
+header{
+    display:flex;
+    padding: 1em;
+}
+
+#logo{
+flex:3;
+}
+
+nav{
+    flex:2;
+    display:flex;
+}
+nav a{
+    flex:1;
+    font-size: 1.2em;
+}
+.maintext{
+    display:flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+}
+.tagline1{
+    color:var(--red);
+    font-size: 2em;
+    font-weight:bolder;
+}
+.tagline2{
+    color:var(--yellow);
+    font-size: 1.25em;
+}
+.callus{
+    color:var(--white);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+     width:20vw;
+     margin-top: .75em;
+     padding:.7em;
+     border-radius: 10px;
+     background-color: var(--green);
+     color:whitesmoke;
+}
+
+button:hover{
+    background-color:#ffc54d;
+}
+button:active{
+    color:var(--red);
+}
+
+.menu{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    color:var(--white);
+}
+
+#menuheading,#locheading{
+    background:linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    font-size:2.5em;
+    color:var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color:var(--green);
+    font-size: 1.5em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    flex:1;
+    justify-self: right;
+}
+
+table{
+    width:100%;
+    padding:1em;
+}
+.maincourse{
+    grid-row: span 2;
+}
+
+.Locations{
+    background: linear-gradient(to right,rgb(100, 100, 100),rgb(53, 52, 52));
+    display:flex;
+    color:var(--white);
+    flex-wrap: wrap;
+}
+.Locations h2{
+    color:var(--green);
+    margin-bottom: .8em;
+}
+
+.Locations div{
+    flex:1;
+    padding:1em;
+    min-width: 220px;
+}
+.landing a:hover{
+    color:var(--green);
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+footer{
+    background-color: rgb(90, 87, 87);
+    color:var(--white);
+    padding: .8em;
+}
+
